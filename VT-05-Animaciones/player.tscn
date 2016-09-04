@@ -1,0 +1,326 @@
+[gd_scene load_steps=20 format=1]
+
+[ext_resource path="res://player.gd" type="Script" id=1]
+[ext_resource path="res://assets/gbot/gBot_body.png" type="Texture" id=2]
+[ext_resource path="res://assets/gbot/gBot_arm_r.png" type="Texture" id=3]
+[ext_resource path="res://assets/gbot/gBot_forearm_r.png" type="Texture" id=4]
+[ext_resource path="res://assets/gbot/gBot_arm_l.png" type="Texture" id=5]
+[ext_resource path="res://assets/gbot/gBot_forearm_l.png" type="Texture" id=6]
+[ext_resource path="res://assets/gbot/gBot_hip.png" type="Texture" id=7]
+[ext_resource path="res://assets/gbot/gBot_leg_r.png" type="Texture" id=8]
+[ext_resource path="res://assets/gbot/gBot_shin_r.png" type="Texture" id=9]
+[ext_resource path="res://assets/gbot/gBot_foot_r.png" type="Texture" id=10]
+[ext_resource path="res://assets/gbot/gBot_leg_l.png" type="Texture" id=11]
+[ext_resource path="res://assets/gbot/gBot_shin_l.png" type="Texture" id=12]
+[ext_resource path="res://assets/gbot/gBot_foot_l.png" type="Texture" id=13]
+[ext_resource path="res://assets/gbot/gBot_head.png" type="Texture" id=14]
+[ext_resource path="res://assets/gbot/gBot_jaw.png" type="Texture" id=15]
+[ext_resource path="res://assets/gbot/gBot_complete.png" type="Texture" id=16]
+
+[sub_resource type="Animation" id=1]
+
+resource/name = "base"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("hip/leg_l:transform/pos")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( 48.4352, 51.7756 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("hip/leg_l:transform/rot")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("hip:transform/pos")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( -21.3867, 119.975 ) ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("hip:transform/rot")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("hip/leg_r/shin_r/foot_r:transform/pos")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( -11.6913, 96.8706 ) ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("hip/leg_r/shin_r/foot_r:transform/rot")
+tracks/5/interp = 1
+tracks/5/imported = false
+tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("hip/leg_l/shin_l/foot_l:transform/pos")
+tracks/6/interp = 1
+tracks/6/imported = false
+tracks/6/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( -5.01056, 90.1898 ) ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("hip/leg_l/shin_l/foot_l:transform/rot")
+tracks/7/interp = 1
+tracks/7/imported = false
+tracks/7/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("body/arm_r/forearm_r:transform/pos")
+tracks/8/interp = 1
+tracks/8/imported = false
+tracks/8/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( -27.2648, 120.42 ) ] }
+tracks/9/type = "value"
+tracks/9/path = NodePath("body/arm_r/forearm_r:transform/rot")
+tracks/9/interp = 1
+tracks/9/imported = false
+tracks/9/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+tracks/10/type = "value"
+tracks/10/path = NodePath("hip/leg_l/shin_l:transform/pos")
+tracks/10/interp = 1
+tracks/10/imported = false
+tracks/10/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( -20.0422, 101.881 ) ] }
+tracks/11/type = "value"
+tracks/11/path = NodePath("hip/leg_l/shin_l:transform/rot")
+tracks/11/interp = 1
+tracks/11/imported = false
+tracks/11/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+tracks/12/type = "value"
+tracks/12/path = NodePath(".:transform/pos")
+tracks/12/interp = 1
+tracks/12/imported = false
+tracks/12/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( 0, 0 ) ] }
+tracks/13/type = "value"
+tracks/13/path = NodePath(".:transform/rot")
+tracks/13/interp = 1
+tracks/13/imported = false
+tracks/13/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+tracks/14/type = "value"
+tracks/14/path = NodePath("body/arm_r:transform/pos")
+tracks/14/interp = 1
+tracks/14/imported = false
+tracks/14/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( -84.0667, 45.4415 ) ] }
+tracks/15/type = "value"
+tracks/15/path = NodePath("body/arm_r:transform/rot")
+tracks/15/interp = 1
+tracks/15/imported = false
+tracks/15/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+tracks/16/type = "value"
+tracks/16/path = NodePath("head:transform/pos")
+tracks/16/interp = 1
+tracks/16/imported = false
+tracks/16/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( -3.12177, -177.635 ) ] }
+tracks/17/type = "value"
+tracks/17/path = NodePath("head:transform/rot")
+tracks/17/interp = 1
+tracks/17/imported = false
+tracks/17/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+tracks/18/type = "value"
+tracks/18/path = NodePath("body:transform/pos")
+tracks/18/interp = 1
+tracks/18/imported = false
+tracks/18/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( -16.7542, -79.9362 ) ] }
+tracks/19/type = "value"
+tracks/19/path = NodePath("body:transform/rot")
+tracks/19/interp = 1
+tracks/19/imported = false
+tracks/19/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+tracks/20/type = "value"
+tracks/20/path = NodePath("body/arm_l/forearm_l:transform/pos")
+tracks/20/interp = 1
+tracks/20/imported = false
+tracks/20/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( -6.68073, 95.2004 ) ] }
+tracks/21/type = "value"
+tracks/21/path = NodePath("body/arm_l/forearm_l:transform/rot")
+tracks/21/interp = 1
+tracks/21/imported = false
+tracks/21/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+tracks/22/type = "value"
+tracks/22/path = NodePath("head/jaw:transform/pos")
+tracks/22/interp = 1
+tracks/22/imported = false
+tracks/22/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( 2.27209, 74.9784 ) ] }
+tracks/23/type = "value"
+tracks/23/path = NodePath("head/jaw:transform/rot")
+tracks/23/interp = 1
+tracks/23/imported = false
+tracks/23/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+tracks/24/type = "value"
+tracks/24/path = NodePath("hip/leg_r:transform/pos")
+tracks/24/interp = 1
+tracks/24/imported = false
+tracks/24/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( -41.7546, 51.7756 ) ] }
+tracks/25/type = "value"
+tracks/25/path = NodePath("hip/leg_r:transform/rot")
+tracks/25/interp = 1
+tracks/25/imported = false
+tracks/25/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+tracks/26/type = "value"
+tracks/26/path = NodePath("body/arm_l:transform/pos")
+tracks/26/interp = 1
+tracks/26/imported = false
+tracks/26/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( 75.5362, 57.9456 ) ] }
+tracks/27/type = "value"
+tracks/27/path = NodePath("body/arm_l:transform/rot")
+tracks/27/interp = 1
+tracks/27/imported = false
+tracks/27/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+tracks/28/type = "value"
+tracks/28/path = NodePath("hip/leg_r/shin_r:transform/pos")
+tracks/28/interp = 1
+tracks/28/imported = false
+tracks/28/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ Vector2( -25.0527, 98.5408 ) ] }
+tracks/29/type = "value"
+tracks/29/path = NodePath("hip/leg_r/shin_r:transform/rot")
+tracks/29/interp = 1
+tracks/29/imported = false
+tracks/29/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":0, "values":[ 0.0 ] }
+
+[sub_resource type="Animation" id=2]
+
+resource/name = "hablar"
+length = 1.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("head/jaw:transform/pos")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.3, 0.5, 0.7, 0.9 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":0, "values":[ Vector2( 2.27209, 74.9784 ), Vector2( 2.27209, 93.9523 ), Vector2( 2.27209, 71.1837 ), Vector2( 6.06689, 93.9523 ), Vector2( 6.06689, 74.9784 ) ] }
+
+[sub_resource type="Animation" id=3]
+
+resource/name = "saluda"
+length = 5.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("body/arm_l:transform/rot")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 1 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 0.0, 66.9187 ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("body/arm_l/forearm_l:transform/rot")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 1, 1.3, 1.5, 1.8, 2 ), "transitions":FloatArray( 1, 1, 1, 1, 1, 0.25 ), "update":0, "values":[ 0.0, 48.0884, 21.2871, 62.8381, 39.374, 68.2926 ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("head:transform/rot")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 2.3, 2.7 ), "transitions":FloatArray( 0.25, 0.25 ), "update":0, "values":[ 0.0, -15.1896 ] }
+
+[node name="player" type="Node2D"]
+
+transform/pos = Vector2( 455, 280 )
+transform/scale = Vector2( 0.5, 0.5 )
+script/script = ExtResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/base = SubResource( 1 )
+anims/hablar = SubResource( 2 )
+anims/saluda = SubResource( 3 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="body" type="Sprite" parent="."]
+
+transform/pos = Vector2( -16.7542, -79.9362 )
+texture = ExtResource( 2 )
+offset = Vector2( 1.94928, 78.0855 )
+
+[node name="arm_r" type="Sprite" parent="body"]
+
+transform/pos = Vector2( -84.0667, 45.4415 )
+texture = ExtResource( 3 )
+offset = Vector2( -12.0667, 30.7935 )
+
+[node name="forearm_r" type="Sprite" parent="body/arm_r"]
+
+transform/pos = Vector2( -27.2648, 120.42 )
+texture = ExtResource( 4 )
+offset = Vector2( 11.4968, 65.8255 )
+
+[node name="arm_l" type="Sprite" parent="body"]
+
+transform/pos = Vector2( 75.5362, 57.9456 )
+transform/rot = 66.9187
+z/z = -1
+texture = ExtResource( 5 )
+offset = Vector2( 4.13904, 21.9905 )
+
+[node name="forearm_l" type="Sprite" parent="body/arm_l"]
+
+transform/pos = Vector2( -6.68073, 95.2004 )
+transform/rot = 68.2926
+texture = ExtResource( 6 )
+offset = Vector2( 14.521, 60.0346 )
+
+[node name="hip" type="Sprite" parent="."]
+
+transform/pos = Vector2( -21.3867, 119.975 )
+texture = ExtResource( 7 )
+offset = Vector2( -0.820679, 26.2238 )
+
+[node name="leg_r" type="Sprite" parent="hip"]
+
+transform/pos = Vector2( -41.7546, 51.7756 )
+texture = ExtResource( 8 )
+offset = Vector2( -14.5846, 46.6223 )
+
+[node name="shin_r" type="Sprite" parent="hip/leg_r"]
+
+transform/pos = Vector2( -25.0527, 98.5408 )
+texture = ExtResource( 9 )
+offset = Vector2( 12.3187, 38.7617 )
+
+[node name="foot_r" type="Sprite" parent="hip/leg_r/shin_r"]
+
+transform/pos = Vector2( -11.6913, 96.8706 )
+texture = ExtResource( 10 )
+offset = Vector2( 42.5162, 12.2146 )
+
+[node name="leg_l" type="Sprite" parent="hip"]
+
+transform/pos = Vector2( 48.4352, 51.7756 )
+z/z = -1
+texture = ExtResource( 11 )
+offset = Vector2( -10.393, 39.2198 )
+
+[node name="shin_l" type="Sprite" parent="hip/leg_l"]
+
+transform/pos = Vector2( -20.0422, 101.881 )
+texture = ExtResource( 12 )
+offset = Vector2( 18.9023, 37.272 )
+
+[node name="foot_l" type="Sprite" parent="hip/leg_l/shin_l"]
+
+transform/pos = Vector2( -5.01056, 90.1898 )
+texture = ExtResource( 13 )
+offset = Vector2( 44.2697, 11.8538 )
+
+[node name="head" type="Sprite" parent="."]
+
+transform/pos = Vector2( -3.12177, -177.635 )
+transform/rot = -15.1896
+texture = ExtResource( 14 )
+offset = Vector2( -0.579468, -109.21 )
+
+[node name="jaw" type="Sprite" parent="head"]
+
+transform/pos = Vector2( 6.00092, 93.5565 )
+texture = ExtResource( 15 )
+offset = Vector2( 8.25214, -43.5419 )
+
+[node name="ref" type="Sprite" parent="."]
+
+visibility/visible = false
+visibility/opacity = 0.5
+texture = ExtResource( 16 )
+__meta__ = { "_edit_lock_":true }
+
+
