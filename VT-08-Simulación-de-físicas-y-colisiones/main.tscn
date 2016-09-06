@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://RigidBody2D.tscn" type="PackedScene" id=1]
+[ext_resource path="res://StaticBody2D.tscn" type="PackedScene" id=2]
+[ext_resource path="res://KinematicBody2D.tscn" type="PackedScene" id=3]
+
+[node name="main" type="Node2D"]
+
+[node name="RigidBody2D" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 489.364, 100.211 )
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 487.693, 354.079 )
+transform/scale = Vector2( 1, 1 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 95.2004, 273.91 )
+
+
