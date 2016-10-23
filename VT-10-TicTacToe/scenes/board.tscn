@@ -1,0 +1,210 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://scripts/board.gd" type="Script" id=1]
+[ext_resource path="res://assets/img/board.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 60, 53 )
+
+[node name="board" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="img_board" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+centered = false
+__meta__ = { "_edit_lock_":true }
+
+[node name="00" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 0.952381, 0, 0, 0.919643, 60, 61.5 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="click_area" type="CollisionShape2D" parent="00"]
+
+transform/pos = Vector2( 60, 61.5 )
+transform/scale = Vector2( 0.952381, 0.919643 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="01" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 0.952381, 0, 0, 0.919643, 60, 181.5 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="click_area" type="CollisionShape2D" parent="01"]
+
+transform/pos = Vector2( 60, 181.5 )
+transform/scale = Vector2( 0.952381, 0.919643 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="02" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 0.952381, 0, 0, 0.919643, 60, 301.5 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="click_area" type="CollisionShape2D" parent="02"]
+
+transform/pos = Vector2( 60, 301.5 )
+transform/scale = Vector2( 0.952381, 0.919643 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="10" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 0.952381, 0, 0, 0.919643, 180, 61.5 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="click_area" type="CollisionShape2D" parent="10"]
+
+transform/pos = Vector2( 180, 61.5 )
+transform/scale = Vector2( 0.952381, 0.919643 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="11" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 0.952381, 0, 0, 0.919643, 180, 181.5 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="click_area" type="CollisionShape2D" parent="11"]
+
+transform/pos = Vector2( 180, 181.5 )
+transform/scale = Vector2( 0.952381, 0.919643 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="12" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 0.952381, 0, 0, 0.919643, 180, 301.5 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="click_area" type="CollisionShape2D" parent="12"]
+
+transform/pos = Vector2( 180, 301.5 )
+transform/scale = Vector2( 0.952381, 0.919643 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="20" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 0.952381, 0, 0, 0.919643, 300, 61.5 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="click_area" type="CollisionShape2D" parent="20"]
+
+transform/pos = Vector2( 300, 61.5 )
+transform/scale = Vector2( 0.952381, 0.919643 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="21" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 0.952381, 0, 0, 0.919643, 300, 181.5 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="click_area" type="CollisionShape2D" parent="21"]
+
+transform/pos = Vector2( 300, 181.5 )
+transform/scale = Vector2( 0.952381, 0.919643 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="22" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 0.952381, 0, 0, 0.919643, 300, 301.5 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="click_area" type="CollisionShape2D" parent="22"]
+
+transform/pos = Vector2( 300, 301.5 )
+transform/scale = Vector2( 0.952381, 0.919643 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[connection signal="input_event" from="00" to="." method="_on_00_input_event"]
+
+[connection signal="input_event" from="01" to="." method="_on_01_input_event"]
+
+[connection signal="input_event" from="02" to="." method="_on_02_input_event"]
+
+[connection signal="input_event" from="10" to="." method="_on_10_input_event"]
+
+[connection signal="input_event" from="11" to="." method="_on_11_input_event"]
+
+[connection signal="input_event" from="12" to="." method="_on_12_input_event"]
+
+[connection signal="input_event" from="20" to="." method="_on_20_input_event"]
+
+[connection signal="input_event" from="21" to="." method="_on_21_input_event"]
+
+[connection signal="input_event" from="22" to="." method="_on_22_input_event"]
+
+
