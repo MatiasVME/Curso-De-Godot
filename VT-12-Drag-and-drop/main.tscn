@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://figura.tscn" type="PackedScene" id=1]
+
+[node name="main" type="Node2D"]
+
+[node name="figura" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 439.258, 227.145 )
+
+
